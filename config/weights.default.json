@@ -1,0 +1,13 @@
+{
+  "_comment": "Веса критериев. Казпатент не публикует веса: значения ниже — предложенные по практике экспертизы (приоритет звукового сходства и сильных элементов). Их можно менять в интерфейсе (вкладка «Веса») или подобрать автоматически скриптом calibrate.py по вашим размеченным решениям.",
+  "word": {"phonetic": 0.45, "semantic": 0.30, "visual": 0.25},
+  "phonetic_parts": {"strict": 0.35, "loose": 0.20, "consonants": 0.15, "beginning": 0.20, "syllables": 0.10},
+  "visual_text_parts": {"letters": 0.50, "alphabet": 0.20, "length": 0.15, "structure": 0.15},
+  "image_parts": {"clip": 0.45, "shape": 0.30, "structure": 0.10, "color": 0.15},
+  "image_parts_no_clip": {"shape": 0.55, "structure": 0.25, "color": 0.20},
+  "combined": {"word": 0.65, "image": 0.35},
+  "max_blend": 0.6,
+  "weak_element_weight": 0.3,
+  "classes": {"same": 1.0, "related": 0.6, "retail_35": 0.4, "unrelated": 0.1, "influence": 0.5},
+  "thresholds": {"high": 0.80, "medium": 0.62, "low": 0.45}
+}

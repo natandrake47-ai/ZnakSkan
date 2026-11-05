@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TM-Sim — сходство товарных знаков</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<header>
+  <div class="brand"><span class="logo">TM</span><div><b>TM-Sim</b><small>Сходство товарных знаков · критерии Казпатента</small></div></div>
+  <nav id="tabs">
+    <button data-tab="compare" class="active">Сравнение</button>
+    <button data-tab="search">Поиск по базе</button>
+    <button data-tab="db">База знаков</button>
+    <button data-tab="chat">ИИ-помощник</button>
+    <button data-tab="settings">Веса и настройки</button>
+  </nav>
+  <div id="sys" class="sys"></div>
+</header>
+
+<main>
+<!-- ===================== СРАВНЕНИЕ ===================== -->
+<section id="tab-compare" class="tab active">
+  <div class="pair">
+    <div class="card mark-card" data-side="a">
+      <h3>Знак 1 <small>заявляемое обозначение</small></h3>
+      <label>Словесный элемент<input name="name" placeholder="например, Тойказан"></label>
+      <label>Классы МКТУ<input name="classes" placeholder="30, 43"></label>
+      <details><summary>Перечень товаров/услуг</summary><textarea name="goods" rows="3"></textarea></details>
+      <label class="file">Изображение (логотип)<input type="file" name="image" accept="image/*"></label>
+      <img class="preview" hidden>
+    </div>
+    <div class="vs">VS</div>
+    <div class="card mark-card" data-side="b">
+      <h3>Знак 2 <small>противопоставляемый знак</small></h3>
+      <label>Словесный элемент<input name="name" placeholder="например, Тайказан"></label>
+      <label>Классы МКТУ<input name="classes" placeholder="30"></label>
+      <details><summary>Перечень товаров/услуг</summary><textarea name="goods" rows="3"></textarea></details>
+      <label class="file">Изображение (логотип)<input type="file" name="image" accept="image/*"></label>
+      <img class="preview" hidden>
+    </div>
+  </div>
+  <div class="actions">
+    <label class="chk"><input type="checkbox" id="cmp-ai" checked> Смысл оценивает локальный ИИ</label>
+    <button class="primary" id="btn-compare">Сравнить</button>
+  </div>
+  <div id="cmp-result"></div>
+</section>
+
+<!-- ===================== ПОИСК ===================== -->
+<section id="tab-search" class="tab">
+  <div class="card">
+    <h3>Поиск сходных зарегистрированных знаков</h3>
+    <div class="grid3">
+      <label>Обозначение<input id="s-name" placeholder="Заявляемое обозначение"></label>
+      <label>Классы МКТУ<input id="s-classes" placeholder="например, 30, 43"></label>
+      <label class="file">Изображение<input type="file" id="s-image" accept="image/*"></label>
+    </div>
+    <div class="actions left">
+      <label class="chk"><input type="checkbox" id="s-related" checked> Искать и в смежных (однородных) классах</label>
+      <label class="chk"><input type="checkbox" id="s-ai"> Уточнить смысл ИИ для топ-10 (медленнее)</label>
+      <button class="primary" id="btn-search">Найти</button>
+    </div>
+  </div>
+  <div id="s-abs"></div>
+  <div id="s-result"></div>
+</section>
+
+<!-- ===================== БАЗА ===================== -->
+<section id="tab-db" class="tab">
+  <div class="pair two">
+    <div class="card">
+      <h3>Импорт бюллетеней Казпатента</h3>
+      <p class="muted">Откройте выпуск на ebulletin.kazpatent.kz (ссылка [RU] у нужной даты), дождитесь загрузки и нажмите <b>Ctrl+S</b> → «Веб-страница полностью». Перетащите сюда сохранённый файл <b>.htm</b>. Из бюллетеня берётся только раздел «Товарные знаки». Подходят также PDF, CSV, JSON, XLSX.</p>
+      <div id="drop" class="drop">Перетащите файлы сюда или <label class="link">выберите<input type="file" id="imp-file" multiple accept=".htm,.html,.pdf,.txt,.csv,.tsv,.json,.xlsx" hidden></label></div>
+      <label class="chk"><input type="checkbox" id="imp-ocr" checked> Распознавать текст на изображениях знаков локальной vision-моделью</label>
+      <div id="jobs"></div>
+    </div>
+    <div class="card">
+      <h3>Состояние базы</h3>
+      <div id="db-stats"></div>
+      <details><summary>Добавить знак вручную</summary>
+        <form id="add-form" class="grid2">
+          <label>Обозначение<input name="name"></label>
+          <label>Классы<input name="classes"></label>
+          <label>№ регистрации<input name="reg_number"></label>
+          <label>№ заявки<input name="app_number"></label>
+          <label>Владелец<input name="owner"></label>
+          <label class="file">Изображение<input type="file" name="image" accept="image/*"></label>
+          <button class="primary" type="submit">Добавить</button>
+        </form>
+      </details>
+    </div>
+  </div>
+  <div class="card">
+    <div class="row"><h3>Знаки в базе</h3>
+      <input id="db-q" placeholder="Поиск по названию, номеру, владельцу">
+      <input id="db-cls" placeholder="Класс" style="width:80px">
+      <label class="chk"><input type="checkbox" id="db-noname"> только без названия</label></div>
+    <div id="db-list"></div>
+    <div class="pager"><button id="db-prev">←</button><span id="db-page"></span><button id="db-next">→</button></div>
+  </div>
+</section>
+
+<!-- ===================== ЧАТ ===================== -->
+<section id="tab-chat" class="tab">
+  <div class="card chat">
+    <div id="chat-ctx" class="ctx" hidden></div>
+    <div id="chat-log">
+      <div class="msg assistant">Здравствуйте! Я локальный ИИ-помощник. Могу проверить обозначение по базе, сравнить два знака, объяснить результат или подсказать про абсолютные основания для отказа. С чего начнём?</div>
+    </div>
+    <form id="chat-form">
+      <textarea id="chat-input" rows="2" placeholder="Например: проверь «Алтын Дән» в 30 классе"></textarea>
+      <button class="primary">Отправить</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===================== НАСТРОЙКИ ===================== -->
+<section id="tab-settings" class="tab">
+  <div class="pair two">
+    <div class="card">
+      <h3>Веса критериев</h3>
+      <p class="muted">Казпатент не публикует веса. Значения по умолчанию предложены по практике экспертизы: главный признак — звучание, словесный элемент в комбинированном знаке сильнее изображения. Веса внутри группы нормируются автоматически.</p>
+      <div id="weights-form"></div>
+      <div class="actions left">
+        <button class="primary" id="w-save">Сохранить</button>
+        <button id="w-reset">Вернуть по умолчанию</button>
+      </div>
+      <h4>Подбор весов по реальным решениям</h4>
+      <p class="muted">Отмечайте пары на вкладке «Сравнение» кнопками «Казпатент признал сходными / не сходными». От 10 пар программа подберёт веса и порог.</p>
+      <button id="w-calib">Подобрать веса</button>
+      <div id="calib-res"></div>
+    </div>
+    <div class="card">
+      <h3>Локальный ИИ</h3>
+      <div id="ai-status"></div>
+      <form id="settings-form" class="grid1">
+        <label>Адрес Ollama<input name="ollama_url"></label>
+        <label>Модель для диалога<input name="chat_model" list="models"></label>
+        <label>Модель для эмбеддингов (смысл)<input name="embed_model" list="models"></label>
+        <label>Vision-модель (распознавание логотипов)<input name="vision_model" list="models"></label>
+        <datalist id="models"></datalist>
+        <label class="chk"><input type="checkbox" name="use_llm_semantic"> Оценивать смысл с помощью LLM</label>
+        <label class="chk"><input type="checkbox" name="use_embeddings"> Использовать эмбеддинги</label>
+        <label class="chk"><input type="checkbox" name="use_clip"> Нейросеть CLIP для изображений (если установлена)</label>
+        <button class="primary">Сохранить настройки</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>

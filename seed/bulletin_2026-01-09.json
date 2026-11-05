@@ -1,0 +1,681 @@
+{
+ "_comment": "Словесные элементы и описания изображений знаков из бюллетеня 2026-01-09 №1, распознанные вручную. Применяются при импорте, если у знака нет названия.",
+ "marks": {
+  "109483": {
+   "name": "ZEEKR",
+   "image_desc": ""
+  },
+  "109484": {
+   "name": "sunshine",
+   "image_desc": ""
+  },
+  "109485": {
+   "name": "АДЖИКА",
+   "image_desc": "красные перцы, зелень в овале"
+  },
+  "109486": {
+   "name": "Кобра",
+   "image_desc": "змея кобра"
+  },
+  "109487": {
+   "name": "ALFA-STORE",
+   "image_desc": "зелёный трилистник-спираль"
+  },
+  "109488": {
+   "name": "JA Room женская одежда",
+   "image_desc": ""
+  },
+  "109489": {
+   "name": "Opal",
+   "image_desc": ""
+  },
+  "109490": {
+   "name": "NOBLE",
+   "image_desc": ""
+  },
+  "109491": {
+   "name": "Stratoscope",
+   "image_desc": ""
+  },
+  "109492": {
+   "name": "SLEEP TECH технология сна",
+   "image_desc": "кровать схематично"
+  },
+  "109493": {
+   "name": "IMPULSE импульс",
+   "image_desc": ""
+  },
+  "109494": {
+   "name": "Sunliss",
+   "image_desc": ""
+  },
+  "109495": {
+   "name": "H.UPMANN HABANA CUBA",
+   "image_desc": "золотые медали, герб"
+  },
+  "109496": {
+   "name": "MONTECRISTO HABANA CUBA",
+   "image_desc": "треугольник со шпагами и лилией"
+  },
+  "109497": {
+   "name": "DAUA CLINICA",
+   "image_desc": ""
+  },
+  "109498": {
+   "name": "CRAFT BEER FEST",
+   "image_desc": "кружка пива, бургер, пластинка"
+  },
+  "109499": {
+   "name": "LUNIX",
+   "image_desc": "разноцветная буква C"
+  },
+  "109500": {
+   "name": "NITA",
+   "image_desc": "стилизованная птица с крыльями"
+  },
+  "109501": {
+   "name": "ERMANSTIR",
+   "image_desc": ""
+  },
+  "109502": {
+   "name": "LE FOND",
+   "image_desc": ""
+  },
+  "109503": {
+   "name": "AROMUS PERFUME",
+   "image_desc": "корона"
+  },
+  "109504": {
+   "name": "EITO",
+   "image_desc": ""
+  },
+  "109505": {
+   "name": "SR SUNRISE",
+   "image_desc": "стилизованная омега"
+  },
+  "109506": {
+   "name": "DOCTOR SOL соляная пещера",
+   "image_desc": "кристаллы соли"
+  },
+  "109507": {
+   "name": "DINAL",
+   "image_desc": "монограмма DA"
+  },
+  "109508": {
+   "name": "kardan kraft",
+   "image_desc": "шестерёнка с буквами kk"
+  },
+  "109509": {
+   "name": "BAYTON",
+   "image_desc": "буква B в красном квадрате"
+  },
+  "109510": {
+   "name": "ПЕГАС СУПЕР",
+   "image_desc": ""
+  },
+  "109511": {
+   "name": "ПЕГАС ЭКСТРА",
+   "image_desc": ""
+  },
+  "109512": {
+   "name": "ARZAN VIP 94 AV94",
+   "image_desc": "кроссовок"
+  },
+  "109513": {
+   "name": "ГОР",
+   "image_desc": ""
+  },
+  "109514": {
+   "name": "КукуСики",
+   "image_desc": ""
+  },
+  "109515": {
+   "name": "ChocoFru",
+   "image_desc": "клубника в шоколаде"
+  },
+  "109516": {
+   "name": "SuGrid",
+   "image_desc": ""
+  },
+  "109517": {
+   "name": "RELY",
+   "image_desc": ""
+  },
+  "109518": {
+   "name": "GENERA",
+   "image_desc": ""
+  },
+  "109519": {
+   "name": "Свищев Анатолий Анатольевич",
+   "image_desc": ""
+  },
+  "109520": {
+   "name": "FRUKTINKA",
+   "image_desc": "фрукты, брызги"
+  },
+  "109521": {
+   "name": "WEBSMART",
+   "image_desc": "глобус в сетке"
+  },
+  "109522": {
+   "name": "TASTE THE RUMMAN",
+   "image_desc": "гранат"
+  },
+  "109523": {
+   "name": "COCO&HANA",
+   "image_desc": ""
+  },
+  "109524": {
+   "name": "SINICHKI.STORE",
+   "image_desc": "синица, цветы"
+  },
+  "109525": {
+   "name": "YUB-GO",
+   "image_desc": ""
+  },
+  "109526": {
+   "name": "СТОПА подологический центр",
+   "image_desc": "стопа в щите"
+  },
+  "109527": {
+   "name": "SL SMART LOCK",
+   "image_desc": "буквы S и L"
+  },
+  "109528": {
+   "name": "AMARIS",
+   "image_desc": ""
+  },
+  "109529": {
+   "name": "SIPMART",
+   "image_desc": ""
+  },
+  "109530": {
+   "name": "NEXTGEN ORIGINAL",
+   "image_desc": "рука жест победы в шестиугольнике"
+  },
+  "109531": {
+   "name": "LEYLI TRAVEL туристская компания",
+   "image_desc": "метка места с мечетью"
+  },
+  "109532": {
+   "name": "ХАНБОКС",
+   "image_desc": "мужчина с топором в лесу, горы"
+  },
+  "109533": {
+   "name": "VikZel",
+   "image_desc": ""
+  },
+  "109534": {
+   "name": "",
+   "image_desc": "буква C со звездой в круге"
+  },
+  "109535": {
+   "name": "MammoCar",
+   "image_desc": ""
+  },
+  "109536": {
+   "name": "LIVEX",
+   "image_desc": "эмблема с автомобилем и лавровыми ветвями"
+  },
+  "109537": {
+   "name": "VIVASTONE.KZ",
+   "image_desc": "ромб, кристалл"
+  },
+  "109538": {
+   "name": "BURKA",
+   "image_desc": "бурка, силуэт"
+  },
+  "109539": {
+   "name": "inDrive",
+   "image_desc": "буквы iD в зелёном квадрате"
+  },
+  "109540": {
+   "name": "inDrive",
+   "image_desc": "буквы iD в зелёном квадрате"
+  },
+  "109541": {
+   "name": "Passquare",
+   "image_desc": ""
+  },
+  "109542": {
+   "name": "RAIDOLLINA",
+   "image_desc": "буква R золотая"
+  },
+  "109543": {
+   "name": "73 PARK",
+   "image_desc": ""
+  },
+  "109544": {
+   "name": "Aulet",
+   "image_desc": ""
+  },
+  "109545": {
+   "name": "medi art медициналық орталығы",
+   "image_desc": "зелёная корона-буква M"
+  },
+  "109546": {
+   "name": "ACM partners",
+   "image_desc": ""
+  },
+  "109547": {
+   "name": "TETSU Japan",
+   "image_desc": "солнце, горы, тории"
+  },
+  "109548": {
+   "name": "ЮПИТЕР-К",
+   "image_desc": "молекулы, точки"
+  },
+  "109549": {
+   "name": "citymarket 24/7",
+   "image_desc": ""
+  },
+  "109550": {
+   "name": "ABADAN",
+   "image_desc": "казахский орнамент"
+  },
+  "109551": {
+   "name": "Qainar Bulak",
+   "image_desc": "яйцо"
+  },
+  "109552": {
+   "name": "iStar POINT",
+   "image_desc": "звезда"
+  },
+  "109553": {
+   "name": "TASTY BREAK",
+   "image_desc": "торт"
+  },
+  "109554": {
+   "name": "xentro",
+   "image_desc": ""
+  },
+  "109555": {
+   "name": "ARNAI",
+   "image_desc": "буква A стилизованная"
+  },
+  "109556": {
+   "name": "BENTOZAVR",
+   "image_desc": "динозавр в круге"
+  },
+  "109557": {
+   "name": "SAQ GROUP",
+   "image_desc": "снежный барс"
+  },
+  "109558": {
+   "name": "NIBBI",
+   "image_desc": "буква B в рамке"
+  },
+  "109559": {
+   "name": "Gnatho Center With L.A.V.",
+   "image_desc": ""
+  },
+  "109560": {
+   "name": "COHIBA Habana Cuba",
+   "image_desc": "голова индейца"
+  },
+  "109561": {
+   "name": "Balkhiya",
+   "image_desc": ""
+  },
+  "109562": {
+   "name": "MALIK MK",
+   "image_desc": "буквы MK золотые"
+  },
+  "109563": {
+   "name": "AiMusNur",
+   "image_desc": "жёлтый смайлик"
+  },
+  "109564": {
+   "name": "",
+   "image_desc": "иероглифоподобный знак белый на чёрном"
+  },
+  "109565": {
+   "name": "YAMMAL",
+   "image_desc": "верблюд стилизованный"
+  },
+  "109566": {
+   "name": "BISMO",
+   "image_desc": ""
+  },
+  "109567": {
+   "name": "BORIK QAZAQ DÄSTÜRI",
+   "image_desc": "всадник на коне, горы"
+  },
+  "109568": {
+   "name": "KIDSAFE",
+   "image_desc": "спящий младенец"
+  },
+  "109569": {
+   "name": "Royal Go автошкола",
+   "image_desc": "стрелки по кругу"
+  },
+  "109570": {
+   "name": "MotoStar мотошкола",
+   "image_desc": "мотошлем с крыльями"
+  },
+  "109571": {
+   "name": "BENZOL GOLD PERFORMANCE",
+   "image_desc": "лев с короной"
+  },
+  "109572": {
+   "name": "ALMALY",
+   "image_desc": ""
+  },
+  "109573": {
+   "name": "SEMI",
+   "image_desc": "домик"
+  },
+  "109574": {
+   "name": "JANZET",
+   "image_desc": "волна, кувшинка, упаковка"
+  },
+  "109575": {
+   "name": "VOBON",
+   "image_desc": "буква B в шестиугольнике"
+  },
+  "109576": {
+   "name": "DARTCORE",
+   "image_desc": "мишень"
+  },
+  "109577": {
+   "name": "BRAVO",
+   "image_desc": ""
+  },
+  "109578": {
+   "name": "BLUE SKY LEGENDS SINCE 2025",
+   "image_desc": "пропеллер самолёта"
+  },
+  "109579": {
+   "name": "LOCATOR/ЛОКАТОР",
+   "image_desc": ""
+  },
+  "109580": {
+   "name": "AS TARTU at",
+   "image_desc": ""
+  },
+  "109581": {
+   "name": "AR DAQ BRAND",
+   "image_desc": ""
+  },
+  "109582": {
+   "name": "#PF_R",
+   "image_desc": "мозг, кардиограмма"
+  },
+  "109583": {
+   "name": "QazAyaz Engineering QAE",
+   "image_desc": "шестерня и снежинка"
+  },
+  "109584": {
+   "name": "АГФОС",
+   "image_desc": ""
+  },
+  "109585": {
+   "name": "МОРФЕЙ",
+   "image_desc": ""
+  },
+  "109586": {
+   "name": "ГРЕЙЗ",
+   "image_desc": ""
+  },
+  "109587": {
+   "name": "АБСИНТИУМ",
+   "image_desc": ""
+  },
+  "109588": {
+   "name": "COCY",
+   "image_desc": "орнамент цветок"
+  },
+  "109589": {
+   "name": "SWYSS VS",
+   "image_desc": ""
+  },
+  "109590": {
+   "name": "JAKA",
+   "image_desc": ""
+  },
+  "109591": {
+   "name": "АГУРА",
+   "image_desc": ""
+  },
+  "109592": {
+   "name": "СТРИГ ЭКСТРА 480",
+   "image_desc": ""
+  },
+  "109593": {
+   "name": "MAXSTI",
+   "image_desc": ""
+  },
+  "109594": {
+   "name": "OSCAR",
+   "image_desc": ""
+  },
+  "109595": {
+   "name": "GANTAROS",
+   "image_desc": ""
+  },
+  "109596": {
+   "name": "ZUMER ZR",
+   "image_desc": "пять звёзд"
+  },
+  "109597": {
+   "name": "LINTON",
+   "image_desc": ""
+  },
+  "109598": {
+   "name": "MARBO",
+   "image_desc": ""
+  },
+  "109599": {
+   "name": "AQUASMART АКВАСМАРТ",
+   "image_desc": ""
+  },
+  "109600": {
+   "name": "BluKaSa",
+   "image_desc": ""
+  },
+  "109601": {
+   "name": "QAZAI",
+   "image_desc": "знак бесконечности"
+  },
+  "109602": {
+   "name": "Cocotaya",
+   "image_desc": ""
+  },
+  "109603": {
+   "name": "ZINBERG",
+   "image_desc": ""
+  },
+  "109604": {
+   "name": "Laseta",
+   "image_desc": ""
+  },
+  "109605": {
+   "name": "ALAMED CLINIC",
+   "image_desc": "медицинский крест с позвоночником"
+  },
+  "109606": {
+   "name": "REKARS",
+   "image_desc": ""
+  },
+  "109607": {
+   "name": "SACE LADY",
+   "image_desc": ""
+  },
+  "109608": {
+   "name": "MUSSAF",
+   "image_desc": "монограмма"
+  },
+  "109609": {
+   "name": "TRUEGREEN",
+   "image_desc": ""
+  },
+  "109610": {
+   "name": "RINOR",
+   "image_desc": ""
+  },
+  "109611": {
+   "name": "ГАЛЛОП",
+   "image_desc": ""
+  },
+  "109612": {
+   "name": "NomadGO",
+   "image_desc": ""
+  },
+  "109613": {
+   "name": "LOVWISH 乐唯诗",
+   "image_desc": "корона"
+  },
+  "109614": {
+   "name": "Савенар Savenar",
+   "image_desc": ""
+  },
+  "109615": {
+   "name": "AUX",
+   "image_desc": ""
+  },
+  "109616": {
+   "name": "LAREY",
+   "image_desc": "буквы LC"
+  },
+  "109617": {
+   "name": "Serebrinka",
+   "image_desc": ""
+  },
+  "109618": {
+   "name": "Baitemir",
+   "image_desc": "буква B в чёрном круге"
+  },
+  "109619": {
+   "name": "Svet Pro",
+   "image_desc": "солнце, лампочка"
+  },
+  "109620": {
+   "name": "ASBIG HOME",
+   "image_desc": ""
+  },
+  "109621": {
+   "name": "LITTLES kids play cafe",
+   "image_desc": ""
+  },
+  "109622": {
+   "name": "Афиша",
+   "image_desc": ""
+  },
+  "109623": {
+   "name": "Ana",
+   "image_desc": "фиолетовая иконка приложения"
+  },
+  "109624": {
+   "name": "BALA CYBER SPACE",
+   "image_desc": ""
+  },
+  "109625": {
+   "name": "PRESTIGE FLOWERS",
+   "image_desc": ""
+  },
+  "109626": {
+   "name": "FitLife Ваш новый образ жизни",
+   "image_desc": "бегущая женщина"
+  },
+  "109627": {
+   "name": "MAMA BOSS",
+   "image_desc": "буква M, женский силуэт"
+  },
+  "109628": {
+   "name": "ZEBRAIN MEDIA GROUP",
+   "image_desc": "стрелки"
+  },
+  "109629": {
+   "name": "GOALHUB футбольный манеж",
+   "image_desc": "футболист бьёт по мячу"
+  },
+  "109630": {
+   "name": "ZER TAS",
+   "image_desc": ""
+  },
+  "109631": {
+   "name": "Capriccio",
+   "image_desc": ""
+  },
+  "109632": {
+   "name": "ОМДЖАРА",
+   "image_desc": ""
+  },
+  "109633": {
+   "name": "ТАФРЕМПА",
+   "image_desc": ""
+  },
+  "109634": {
+   "name": "ADEYTOS",
+   "image_desc": ""
+  },
+  "109635": {
+   "name": "STAR HOME",
+   "image_desc": "домик вместо буквы O"
+  },
+  "109636": {
+   "name": "mioka",
+   "image_desc": ""
+  },
+  "109637": {
+   "name": "AS GROUP",
+   "image_desc": "балерина, буквы AS"
+  },
+  "109638": {
+   "name": "ULTRAVIE",
+   "image_desc": "буква U в круге"
+  },
+  "109639": {
+   "name": "KERARUN",
+   "image_desc": "буква K"
+  },
+  "109640": {
+   "name": "Zenvik",
+   "image_desc": ""
+  },
+  "109641": {
+   "name": "OPPONAI",
+   "image_desc": ""
+  },
+  "109642": {
+   "name": "",
+   "image_desc": "мозаика из квадратов бирюзовый, серый, красный"
+  },
+  "109643": {
+   "name": "ÖZIM BILEM",
+   "image_desc": "улитка"
+  },
+  "109644": {
+   "name": "NOM",
+   "image_desc": ""
+  },
+  "109645": {
+   "name": "THE CIRCLE",
+   "image_desc": ""
+  },
+  "109646": {
+   "name": "ONLYEDUCATION Astana",
+   "image_desc": "глобус, академическая шапка, книга"
+  },
+  "109647": {
+   "name": "GROWIX GX",
+   "image_desc": ""
+  },
+  "109648": {
+   "name": "Pop Paint",
+   "image_desc": ""
+  },
+  "109649": {
+   "name": "GeGo",
+   "image_desc": ""
+  },
+  "109650": {
+   "name": "MEREKE",
+   "image_desc": ""
+  },
+  "109651": {
+   "name": "GM",
+   "image_desc": "сетка квадратов"
+  }
+ }
+}
